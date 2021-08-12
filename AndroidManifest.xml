@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.bravobene.bohbohfree"
+    android:versionCode="1"
+    android:versionName="1.0" >
+    
+    <supports-screens 
+		android:resizeable="true"
+		android:smallScreens="false"
+		android:normalScreens="true"
+		android:largeScreens="true"
+		android:anyDensity="true"
+	/> 
+
+    
+    <uses-sdk android:minSdkVersion="13" />
+
+    <application
+        android:icon="@drawable/icon_free_144"
+        android:label="@string/app_name"
+        android:largeHeap="true" >
+        <activity
+            android:name=".Bohboh"
+            android:label="@string/app_name"
+            android:configChanges="keyboardHidden"
+            android:screenOrientation="landscape"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" >
+            
+            <category android:name="android.intent.category.DEFAULT" />
+            
+        </activity>
+        
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.bravobene.bohbohfree.BohbohSplashScreen" android:screenOrientation="landscape">
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.bravobene.bohbohfree.pages.Farm" android:configChanges="keyboardHidden" android:screenOrientation="landscape"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.bravobene.bohbohfree.pages.Jungle" android:configChanges="keyboardHidden" android:screenOrientation="landscape"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name="com.bravobene.bohbohfree.pages.Safari" android:configChanges="keyboardHidden" android:screenOrientation="landscape"/>
+        <activity android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" android:name=".BohBohLoadingScreen" android:configChanges="keyboardHidden" android:screenOrientation="landscape"/>
+    </application>
+
+</manifest>
