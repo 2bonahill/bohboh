@@ -1,4 +1,4 @@
-# bohboh
+# BohBoh
 
 This is bohboh, an interactive book/game for kids. Available both on Android and iOS.
 
